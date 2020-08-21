@@ -1,0 +1,33 @@
+commands to start testing on Task Planner
+
+COMMANDS IN TERMINAL
+npm init 
+npm i --save-dev parcel-bundler
+Add in package.json 
+
+CHANGE IN JSON FILE
+Put comma on line above at hte end of test line, then paste this below
+"start": "parcel index.html"
+
+COMMANDS IN TERMINAL to start parcel bundler
+npm start
+
+Open the link given on the browser (cmd + click OR central + click) - it will open project
+
+(DOWNLOAD jest)
+https://ryankubik.com/blog/parcel-and-jest/
+COMMAND IN TERMINAL
+npm i --save-dev jest babel-jest @babel/core @babel/preset-env
+
+CREATE NEW FILE
+.babelrc 
+
+ADD TO NEW FILE
+paste this below in .babelrc 
+{
+ "presets": ["@babel/preset-env"]
+}
+
+CHANGE IN JSON FILE
+Change scripts test to jest 
+"test": "jest",
